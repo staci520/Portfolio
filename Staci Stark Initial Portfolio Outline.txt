@@ -1,0 +1,5 @@
+Staci Stark Initial Portfolio Outline Headline – Hello.  I’m Staci Stark, full-stack web developer. Bio  –  I’m a full-stack web developer versed in coding creative and functional interactive websites and apps. I enjoy a good challenge, adventure, exploration, learning, and variety – all with a dash of risk-taking.  Projects – Beliefs Inventory Quiz developed using vanilla HTML, CSS, and JavaScript.
+
+https://github.com/staci520/Quiz-App
+
+https://staci520.github.io/Quiz-App/ 
