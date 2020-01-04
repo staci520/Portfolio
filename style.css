@@ -1,58 +1,345 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 1% 0;
-  background-color: #6c7a89;
-}
- 
-header {
-  background-color: #e8ecf1;
-  padding: 6% 0;
-  min-height: 400px;
-  align-self: center;
-}
+*{
+  margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      /*The box-sizing property is used to tell the browser what the sizing properties (width and
+  height) should include border-box.*/
+      box-sizing: border-box;
+      /*reset Chrome user agent styles*/
+      -webkit-margin-before: 0px;
+      -webkit-margin-after: 0px;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+      -webkit-padding-before: 0px;
+      -webkit-padding-after: 0px;
+      -webkit-padding-start: 0px;
+      -webkit-padding-end: 0px;
+  }
 
 body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 20px;
+}
+
+h1 {
   font-family: 'Montserrat', sans-serif;
-  font-family: 'Poppins', sans-serif;
-  font-size: 25px;
-  color: black;
+  font-size: 100px;
   text-align: center;
 }
 
-.column1 {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 200px; 
-  background-color: #abb7b7;
+h3 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 20px; 
+  font-size: 28px; 
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+h4 {
+  text-align: center;
+  padding: 10px; 
+  font-size: 23px; 
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.about-container,
+.skills-container,
+.projects-container,
+.contact-container,
+.footer-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px; 
+  margin-top: 50px;
+}
+
+/* HEADER - NAVIGATION BAR-------------------------------------------------*/
+
+.nav-bar {
+  clear: both;
+  overflow: auto;
+  background-color:#EBEDF3;
+}
+
+.nav-logo img {
+  float:left;
+  margin: 15px;
+}
+
+.nav-links {
+  float: right;
+}
+
+ul {
+  display: inline-block;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  margin: 15px;
+  padding: 5px;
+  width: auto;
+} 
+
+a:link {
+  text-decoration: none;
+  color: black;
+  transition-duration: 0.8s;
+}
+
+a:active {
+   color: #2B4261; 
+}
+
+a:visited {
+  color: black; 
+}
+
+a:hover {
+  color: #c6a96d;
+}
+
+/* HERO SECTION-------------------------------------------------*/
+
+.hero-container {
+background: url("hero.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    height: 1000px; 
+  background-size: cover;
+  padding: 10%;
+ }
+
+ .tagline {
+ -webkit-animation: tracking-in-expand 1.3s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.7em;
+    opacity: 0;
+  }
+  25% {
+    opacity: .25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ABOUT ME SECTION-------------------------------------------------*/
+
+.about-container {
+ background-color: #EBEDF3; 
+}
+
+.about-container p {
+  margin-right: 50px;
+
+}
+
+.about-container .photo {
+  border-radius: 15px;
+  float: right;
+  height: 200px;
+}
+
+/* SKILLS SECTION-------------------------------------------------*/
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white; 
+  align-self: center;
+}
+
+.skills-item {
+  text-align: center;
+} 
+
+.skills-img {
+  height: 145px;
+  padding: 25px;
+  margin: 10px;
 }
   
-.column2 {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 200px; 
-  background-color: #bfbfbf; 
+.skills container figcaption {
+  text-align: center;
 }
 
-  /* Clear floats after the columns
-.row:after {
-  display: table;
-  clear: both;
+/* PROJECTS SECTION-------------------------------------------------*/
+
+.projects-container {
+  display: block;
+  background-color: #EBEDF3; 
+ }
+
+.projects-item {
+  padding: 5px; 
+}
+
+.projects-column,
+.projects-description {
+  display: inline-block;
+  width: 49%;
+  padding: 30px; 
+  vertical-align: top;
+}
+
+.projects-description ul {
+  display: block;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.projects-description li {
+  display: inline-block;
+  width: auto;
+  padding: 15px;
+  margin: 0;
+  border: 1px solid orange;
+}
+
+.projects-column img {
+  width: 100%;
+}
+
+/* MESSAGE SECTION TO BE ADDED AT SECOND PORTFOLIO MODULE----------------------
+
+.contact-container {
+  background-color: white; 
 } */
 
+/* CONNECT / FOOTER------------------------------------------------- */
 
-@media screen and (max-width: 600px) {
-  .column1, .column2 {
+.footer-container {
+  width: 100%;
+  text-align: center;
+}
+
+/* RESPONSIVE------------------------------------------------- */
+
+/*large laptop screen-------------------------------------------------*/
+@media only screen and (max-width: 1600px) {
+  body {
+   color: teal;
+  }
+  
+  .hero-container .tagline {
+      font-size: 100px;
+  }
+}
+
+/* *ipad landscape--small laptop screens-----------------------------*/ 
+@media only screen and (max-width: 1024px) {
+  body {
+   color: purple;
+   font-size: 16px;
+   
+  }
+  .hero-container {
+      height: 600px;
+  }
+  .hero-container .tagline {
+      margin-top: 5%;
+      font-size: 80px;  }
+}
+
+/*ipad potrait-------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+  body {
+    color: yellowgreen;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  .hero-container {
+      height: 450px;
+  }
+
+  .hero-container .tagline {
+      margin-top: 3%;
+      font-size: 25px;
+  }
+
+  header nav {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
     width: 100%;
- }
+    float: none;
+  }
+
+  .nav-logo  {
+    display: inline-block;
+  }
+
+  .nav-bar {
+    text-align: center;
+  }
+
+  .tagline {
+    padding-top: 5px;
+    font-size: 100px;
+    display: block;
+  }
+
+  .about-container p {
+    padding: 15px;
+    /* font-size: 15px; */
+  }
+
+  .about-container .photo {
+    border-radius: 15px;
+    float: right;
+    height: 200px;
+    padding: 10px;
+  }
+
+  .projects-container .projects-column {
+    display: block;
+    width: 100%;
+  }
+
+  .projects-column,
+  .projects-description  {
+    width: 100%;
+    padding: 15px; 
+    font-size: 15px;
+  }
+}
+
+/*iPhone portrait-----------------------------------------------*/
+@media only screen and (max-width: 520px) {
+  body {
+   color: pink;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
 }
