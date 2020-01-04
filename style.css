@@ -235,7 +235,7 @@ background: url("hero.jpg") no-repeat center center;
 /*large laptop screen-------------------------------------------------*/
 @media only screen and (max-width: 1600px) {
   body {
-   color: teal;
+   /* color: teal; */
   }
   
   .hero-container .tagline {
@@ -246,7 +246,7 @@ background: url("hero.jpg") no-repeat center center;
 /* *ipad landscape--small laptop screens-----------------------------*/ 
 @media only screen and (max-width: 1024px) {
   body {
-   color: purple;
+   /* color: purple; */
    font-size: 16px;
    
   }
@@ -261,7 +261,7 @@ background: url("hero.jpg") no-repeat center center;
 /*ipad potrait-------------------------------------------------*/
 @media only screen and (max-width: 768px) {
   body {
-    color: yellowgreen;
+    /* color: yellowgreen; */
   }
 
   h1 {
@@ -336,7 +336,7 @@ background: url("hero.jpg") no-repeat center center;
 /*iPhone portrait-----------------------------------------------*/
 @media only screen and (max-width: 520px) {
   body {
-   color: pink;
+   /* color: pink; */
   }
 
   h1 {
