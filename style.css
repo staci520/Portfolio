@@ -26,7 +26,8 @@ body {
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 100px;
-  text-align: center;
+  text-align: center; 
+  color: #EBEDF3;
 }
 
 h3 {
@@ -244,9 +245,9 @@ background: url("hero.jpg") no-repeat center center;
 
 /*iPhone portrait*/
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 479px) {
   body {
-      color: purple;
+      /* color: purple; */
   }
   li {
     display: inline-block;
@@ -317,14 +318,14 @@ background: url("hero.jpg") no-repeat center center;
 
 /*iPhone landscape*/
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
   body {
-      color: green;
+      /* color: green; */
   }
 
   li {
     display: inline-block;
-    margin: 10px;
+    margin: 12px;
     padding: 5px;
     width: auto;
   }
@@ -342,6 +343,7 @@ background: url("hero.jpg") no-repeat center center;
     font-family: 'Montserrat', sans-serif;
     font-size: 70px;
     text-align: center;
+    color: #EBEDF3;
   }
 
   .hero-container {
@@ -383,17 +385,17 @@ background: url("hero.jpg") no-repeat center center;
 
 /*ipad potrait*/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   body {
-      color: red;
+      /* color: red; */
   }
 }
 
 /*ipad lanscape / small laptop*/
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1599px) {
   body {
-      color: blue;
+      /* color: blue; */
   }
 }
 
@@ -401,6 +403,6 @@ background: url("hero.jpg") no-repeat center center;
 
 @media only screen and (min-width: 1600px) {
   body {
-      color: orange;
+      /* color: orange; */
   }
 } 
