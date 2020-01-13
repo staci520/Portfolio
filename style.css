@@ -1,32 +1,32 @@
 * {
   margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      /*The box-sizing property is used to tell the browser what the sizing properties (width and
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  /*The box-sizing property is used to tell the browser what the sizing properties (width and
   height) should include border-box.*/
-      box-sizing: border-box;
-      /*reset Chrome user agent styles*/
-      -webkit-margin-before: 0px;
-      -webkit-margin-after: 0px;
-      -webkit-margin-start: 0px;
-      -webkit-margin-end: 0px;
-      -webkit-padding-before: 0px;
-      -webkit-padding-after: 0px;
-      -webkit-padding-start: 0px;
-      -webkit-padding-end: 0px;
+  box-sizing: border-box;
+  /*reset Chrome user agent styles*/
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-before: 0px;
+  -webkit-padding-after: 0px;
+  -webkit-padding-start: 0px;
+  -webkit-padding-end: 0px;
 }
 
 body {
   font-family: 'Montserrat', Arial, sans-serif;
   font-family: 'Poppins', Arial, sans-serif;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 100px;
-  text-align: center; 
+  font-size: 50px;
+  text-align: center;
   color: #EBEDF3;
 }
 
@@ -34,15 +34,15 @@ h3 {
   display: block;
   width: 100%;
   text-align: center;
-  padding: 20px; 
-  font-size: 28px; 
+  padding: 20px;
+  font-size: 28px;
   font-family: 'Poppins', Arial, sans-serif;
 }
 
 h4 {
   text-align: center;
-  padding: 10px; 
-  font-size: 23px; 
+  padding: 10px;
+  font-size: 23px;
   font-family: 'Poppins', Arial, sans-serif;
 }
 
@@ -53,7 +53,7 @@ h4 {
 .footer-container {
   width: 80%;
   margin: 0 auto;
-  padding: 30px; 
+  padding: 30px;
   margin-top: 50px;
 }
 
@@ -62,12 +62,16 @@ h4 {
 .nav-bar {
   clear: both;
   overflow: auto;
-  background-color:#EBEDF3;
+  background-color: #EBEDF3;
 }
 
 .nav-logo img {
-  float:left;
-  margin: 15px;
+  float: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .nav-links {
@@ -82,10 +86,9 @@ ul {
 
 li {
   display: inline-block;
-  margin: 15px;
-  padding: 5px;
+  margin: 10px;
   width: auto;
-} 
+}
 
 a:link {
   text-decoration: none;
@@ -94,11 +97,11 @@ a:link {
 }
 
 a:active {
-   color: #2B4261; 
+  color: #2B4261;
 }
 
 a:visited {
-  color: black; 
+  color: black;
 }
 
 a:hover {
@@ -108,18 +111,18 @@ a:hover {
 /* HERO SECTION-------------------------------------------------*/
 
 .hero-container {
-background: url("hero.jpg") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    width: 100%;
-    height: 1000px; 
+  background: url("hero.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  width: 100%;
+  height: 500px;
   background-size: cover;
   padding: 10%;
- }
+}
 
- .tagline {
- -webkit-animation: tracking-in-expand 1.3s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+.tagline {
+  -webkit-animation: tracking-in-expand 1.3s cubic-bezier(0.215, 0.610, 0.355, 1.000);
 }
 
 @-webkit-keyframes tracking-in-expand {
@@ -127,15 +130,19 @@ background: url("hero.jpg") no-repeat center center;
     letter-spacing: -0.7em;
     opacity: 0;
   }
+
   25% {
     opacity: .25;
   }
+
   50% {
     opacity: 0.5;
   }
+
   75% {
     opacity: .75;
   }
+
   100% {
     opacity: 1;
   }
@@ -144,7 +151,7 @@ background: url("hero.jpg") no-repeat center center;
 /* ABOUT ME SECTION-------------------------------------------------*/
 
 .about-container {
- background-color: #EBEDF3; 
+  background-color: #EBEDF3;
 }
 
 .about-container p {
@@ -155,28 +162,27 @@ background: url("hero.jpg") no-repeat center center;
 .about-container .photo {
   border-radius: 15px;
   float: right;
-  height: 200px;
+  height: 275px;
 }
 
 /* SKILLS SECTION-------------------------------------------------*/
 
 .skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: white; 
+  display: block;
+  background-color: white;
   align-self: center;
 }
 
 .skills-item {
   text-align: center;
-} 
+}
 
 .skills-img {
   height: 145px;
   padding: 25px;
   margin: 10px;
 }
-  
+
 .skills container figcaption {
   text-align: center;
 }
@@ -185,26 +191,25 @@ background: url("hero.jpg") no-repeat center center;
 
 .projects-container {
   display: block;
-  background-color: #EBEDF3; 
- }
+  background-color: #EBEDF3;
+}
 
 .projects-item {
-  padding: 5px; 
+  padding: 5px;
 }
 
 .projects-column,
 .projects-description {
-  display: inline-block;
-  width: 49%;
-  padding: 30px; 
-  vertical-align: top;
+  display: block;
+  width: 100%;
+  padding: 30px;
 }
 
 .projects-description ul {
   display: block;
+  text-align: center;
   list-style-type: none;
   text-decoration: none;
-  margin-top: 10px;
 }
 
 .projects-description li {
@@ -219,12 +224,17 @@ background: url("hero.jpg") no-repeat center center;
   width: 100%;
 }
 
+.project-links {
+  text-align: center;
+}
+
 .code-links {
   display: inline-block;
   width: auto;
   border: 1px solid black;
-  padding: 5px 10px;
+  padding: 10px 10px;
   border-radius: 5px;
+  margin: 7px;
 }
 
 /* MESSAGE SECTION TO BE ADDED AT SECOND PORTFOLIO MODULE----------------------
@@ -242,85 +252,19 @@ background: url("hero.jpg") no-repeat center center;
 
 /* RESPONSIVE------------------------------------------------- */
 
+/*iPhone portrait--------------------*/
 
-/*iPhone portrait*/
-
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (min-width: 320px) {
   body {
-      /* color: purple; */
-  }
-  li {
-    display: inline-block;
-    margin: 1px;
-    padding: 1px;
-    width: auto;
-}
-
-  .nav-logo img {
-    float: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
-    text-align: center;
-  }
-
-  .hero-container {
-    background: url(hero.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    width: 100%;
-    height: 500px;
-    background-size: cover;
-    padding: 10%;
-  }
-
-  .about-container .photo {
-    border-radius: 15px;
-    float: none;
-    height: 275px;
-  }
-
-  .projects-description ul {
-    display: block;
-    text-align: center;
-    list-style-type: none;
-    text-decoration: none;
-}
-
-  body {
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-family: 'Poppins', Arial, sans-serif;
-    font-size: 17px;
-  } 
-
-  .skills-container {
-    display: block;
-    background-color: white;
-    align-self: center;
-  }
-
-  .projects-column, .projects-description {
-    display: block;
-    width: 100%;
-    padding: 30px;
-    vertical-align: top;
+    /* color: purple; */
   }
 }
 
+/*iPhone landscape-----------------*/
 
-/*iPhone landscape*/
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) {
   body {
-      /* color: green; */
+    /* color: green; */
   }
 
   li {
@@ -330,13 +274,14 @@ background: url("hero.jpg") no-repeat center center;
     width: auto;
   }
 
+  .nav-links {
+    text-align: center;
+    margin-top: 5px;
+  }
+
   .nav-logo img {
-    float: none;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: auto;
   }
 
   h1 {
@@ -346,63 +291,104 @@ background: url("hero.jpg") no-repeat center center;
     color: #EBEDF3;
   }
 
-  .hero-container {
-    background: url(hero.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    width: 100%;
-    height: 500px;
-    background-size: cover;
-    padding: 10%;
-  }
-
   .about-container .photo {
     border-radius: 15px;
     float: none;
     height: 400px;
   }
 
+  .projects-column,
+  .projects-description {
+    display: block;
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+/*ipad potrait--------------------*/
+
+@media only screen and (min-width: 768px) {
   body {
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-family: 'Poppins', Arial, sans-serif;
-    font-size: 17px;
-  } 
+    /* color: red; */
+    font-size: 20px;
+  }
+
+  .nav-logo img {
+    float: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    color: #EBEDF3;
+  }
+
+  .about-container .photo {
+    border-radius: 15px;
+    float: right;
+    height: 200px;
+  }
 
   .skills-container {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     background-color: white;
     align-self: center;
   }
 
-  .projects-column, .projects-description {
+  .projects-column,
+  .projects-description {
     display: block;
     width: 100%;
     padding: 30px;
+  }
+}
+
+/*ipad lanscape / small laptop----------*/
+
+@media only screen and (min-width: 1024px) {
+  body {
+    /* color: blue; */
+  }
+
+  .hero-container {
+    background: url("hero.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+    padding: 10%;
+  }
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 85px;
+    text-align: center;
+  }
+
+  .projects-column,
+  .projects-description {
+    display: inline-block;
+    width: 49%;
+    padding: 10px;
     vertical-align: top;
   }
+
+
 }
 
-/*ipad potrait*/
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  body {
-      /* color: red; */
-  }
-}
-
-/*ipad lanscape / small laptop*/
-
-@media only screen and (min-width: 1024px) and (max-width: 1599px) {
-  body {
-      /* color: blue; */
-  }
-}
-
-/* large desktop */
+/* large desktop-------------------- */
 
 @media only screen and (min-width: 1600px) {
   body {
-      /* color: orange; */
+    /* color: orange; */
   }
-} 
+}
